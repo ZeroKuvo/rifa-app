@@ -749,7 +749,7 @@ function App() {
         <div className="mt-8">
           <h2 className="text-2xl font-bold mb-4 text-center">Boletos</h2>
           
-          <div className="grid grid-cols-5 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-10 gap-2">
+          <div className="grid grid-cols-5 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-10 gap-3 p-2 sm:gap-4">
             {Array.from({ length: totalTickets }, (_, i) => {
               const ticket = getTicket(i + 1);
               const isSold = !!ticket.name;
